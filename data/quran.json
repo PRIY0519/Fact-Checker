@@ -1,0 +1,38 @@
+[
+  {
+    "surah": 1,
+    "ayah": 1,
+    "text": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
+    "translation": "Sahih International",
+    "original": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+    "transliteration": "bismillāhi r-raḥmāni r-raḥīm",
+    "context": "The opening verse of the Quran, known as the Basmala"
+  },
+  {
+    "surah": 2,
+    "ayah": 255,
+    "text": "Allah - there is no deity except Him, the Ever-Living, the Self-Sustaining.",
+    "translation": "Sahih International",
+    "original": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ",
+    "transliteration": "allāhu lā ilāha illā huwal-ḥayyul-qayyūm",
+    "context": "Part of Ayat al-Kursi (The Throne Verse)"
+  },
+  {
+    "surah": 112,
+    "ayah": 1,
+    "text": "Say, 'He is Allah, [who is] One.'",
+    "translation": "Sahih International",
+    "original": "قُلْ هُوَ اللَّهُ أَحَدٌ",
+    "transliteration": "qul huwa allāhu aḥad",
+    "context": "Surah Al-Ikhlas (The Sincerity) - emphasizing monotheism"
+  },
+  {
+    "surah": 5,
+    "ayah": 32,
+    "text": "Whoever kills a soul unless for a soul or for corruption [done] in the land - it is as if he had slain mankind entirely.",
+    "translation": "Sahih International",
+    "original": "مَن قَتَلَ نَفْسًا بِغَيْرِ نَفْسٍ أَوْ فَسَادٍ فِي الْأَرْضِ فَكَأَنَّمَا قَتَلَ النَّاسَ جَمِيعًا",
+    "transliteration": "man qatala nafsan bi-ghayri nafsin aw fasādin fil-arḍi fa-ka-annamā qatala n-nāsa jamīʿā",
+    "context": "Teaching about the sanctity of human life"
+  }
+]

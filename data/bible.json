@@ -1,0 +1,42 @@
+[
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "verse": 9,
+    "text": "Blessed are the peacemakers, for they will be called children of God.",
+    "translation": "NIV",
+    "original": "μακάριοι οἱ εἰρηνοποιοί, ὅτι αὐτοὶ υἱοὶ θεοῦ κληθήσονται.",
+    "transliteration": "makarioi hoi eirēnopoioi, hoti autoi huioi theou klēthēsontai",
+    "context": "Part of the Beatitudes from the Sermon on the Mount"
+  },
+  {
+    "book": "John",
+    "chapter": 3,
+    "verse": 16,
+    "text": "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.",
+    "translation": "NIV",
+    "original": "Οὕτως γὰρ ἠγάπησεν ὁ θεὸς τὸν κόσμον, ὥστε τὸν υἱὸν τὸν μονογενῆ ἔδωκεν, ἵνα πᾶς ὁ πιστεύων εἰς αὐτὸν μὴ ἀπόληται ἀλλ᾽ ἔχῃ ζωὴν αἰώνιον.",
+    "transliteration": "houtōs gar ēgapēsen ho theos ton kosmon, hōste ton huion ton monogenē edōken, hina pas ho pisteuōn eis auton mē apolētai all᾽ echē zōēn aiōnion",
+    "context": "Jesus explaining God's love and the purpose of his mission"
+  },
+  {
+    "book": "Genesis",
+    "chapter": 1,
+    "verse": 1,
+    "text": "In the beginning God created the heavens and the earth.",
+    "translation": "NIV",
+    "original": "בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ׃",
+    "transliteration": "bereshit bara elohim et hashamayim ve'et ha'aretz",
+    "context": "The opening verse of the Bible describing creation"
+  },
+  {
+    "book": "Psalms",
+    "chapter": 23,
+    "verse": 1,
+    "text": "The Lord is my shepherd, I lack nothing.",
+    "translation": "NIV",
+    "original": "מִזְמוֹר לְדָוִד יְהוָה רֹעִי לֹא אֶחְסָר׃",
+    "transliteration": "mizmor ledavid adonai ro'i lo echsar",
+    "context": "The beginning of Psalm 23, a famous psalm of trust in God"
+  }
+]

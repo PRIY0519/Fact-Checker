@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Demo - Fact Verification Results</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .verdict-supported { 
+            background: linear-gradient(135deg, #10b981, #059669);
+            border-color: #059669;
+        }
+        .verdict-contradicted { 
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            border-color: #dc2626;
+        }
+        .verdict-partially { 
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            border-color: #d97706;
+        }
+        .confidence-excellent { background: linear-gradient(90deg, #10b981, #059669); }
+        .confidence-good { background: linear-gradient(90deg, #3b82f6, #1d4ed8); }
+        .confidence-moderate { background: linear-gradient(90deg, #f59e0b, #d97706); }
+        .confidence-low { background: linear-gradient(90deg, #ef4444, #dc2626); }
+        .pulse-glow {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.3); }
+            50% { box-shadow: 0 0 30px rgba(59, 130, 246, 0.6); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 p-8">
+    <div class="max-w-2xl mx-auto">
+        <h1 class="text-3xl font-bold text-center mb-8">Enhanced Fact Verification UI</h1>
+        
+        <!-- Example 1: Supported Claim -->
+        <div class="bg-white rounded-xl p-6 mb-6 shadow-lg">
+            <h2 class="text-xl font-semibold mb-4">Example: Supported Claim</h2>
+            <div class="verdict-supported rounded-xl p-6 text-white text-center mb-4 shadow-lg pulse-glow">
+                <div class="flex items-center justify-center mb-3">
+                    <i class="fas fa-check-circle text-4xl mr-3"></i>
+                    <div>
+                        <div class="text-2xl font-bold">FACT VERIFIED ✓</div>
+                        <div class="text-sm opacity-90">This claim is supported by scripture</div>
+                    </div>
+                </div>
+                <div class="inline-block px-4 py-2 rounded-full bg-white bg-opacity-20 text-sm font-medium">Supported</div>
+            </div>
+            <div class="bg-white border-2 border-gray-200 rounded-lg p-4">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-semibold text-gray-700">Confidence Level</span>
+                    <span class="text-xl font-bold text-gray-800">92%</span>
+                </div>
+                <div class="relative">
+                    <div class="w-full bg-gray-200 rounded-full h-4 shadow-inner">
+                        <div class="confidence-excellent h-4 rounded-full transition-all duration-1000 relative overflow-hidden" style="width: 92%">
+                            <div class="absolute inset-0 bg-gradient-to-r from-transparent to-white opacity-30 animate-pulse"></div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between text-xs text-gray-500 mt-1">
+                        <span>Low</span>
+                        <span>Medium</span>
+                        <span>High</span>
+                    </div>
+                </div>
+                <div class="text-xs text-gray-600 mt-2 text-center">Excellent confidence - Very reliable result</div>
+            </div>
+        </div>
+
+        <!-- Example 2: Contradicted Claim -->
+        <div class="bg-white rounded-xl p-6 mb-6 shadow-lg">
+            <h2 class="text-xl font-semibold mb-4">Example: Contradicted Claim</h2>
+            <div class="verdict-contradicted rounded-xl p-6 text-white text-center mb-4 shadow-lg pulse-glow">
+                <div class="flex items-center justify-center mb-3">
+                    <i class="fas fa-times-circle text-4xl mr-3"></i>
+                    <div>
+                        <div class="text-2xl font-bold">FACT DISPUTED ✗</div>
+                        <div class="text-sm opacity-90">This claim contradicts scripture</div>
+                    </div>
+                </div>
+                <div class="inline-block px-4 py-2 rounded-full bg-white bg-opacity-20 text-sm font-medium">Contradicted</div>
+            </div>
+            <div class="bg-white border-2 border-gray-200 rounded-lg p-4">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-semibold text-gray-700">Confidence Level</span>
+                    <span class="text-xl font-bold text-gray-800">78%</span>
+                </div>
+                <div class="relative">
+                    <div class="w-full bg-gray-200 rounded-full h-4 shadow-inner">
+                        <div class="confidence-good h-4 rounded-full transition-all duration-1000 relative overflow-hidden" style="width: 78%">
+                            <div class="absolute inset-0 bg-gradient-to-r from-transparent to-white opacity-30 animate-pulse"></div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between text-xs text-gray-500 mt-1">
+                        <span>Low</span>
+                        <span>Medium</span>
+                        <span>High</span>
+                    </div>
+                </div>
+                <div class="text-xs text-gray-600 mt-2 text-center">Good confidence - Reliable result</div>
+            </div>
+        </div>
+
+        <!-- Example 3: Partially Supported -->
+        <div class="bg-white rounded-xl p-6 mb-6 shadow-lg">
+            <h2 class="text-xl font-semibold mb-4">Example: Partially Supported</h2>
+            <div class="verdict-partially rounded-xl p-6 text-white text-center mb-4 shadow-lg pulse-glow">
+                <div class="flex items-center justify-center mb-3">
+                    <i class="fas fa-exclamation-triangle text-4xl mr-3"></i>
+                    <div>
+                        <div class="text-2xl font-bold">PARTIALLY CORRECT ⚠</div>
+                        <div class="text-sm opacity-90">This claim has mixed support</div>
+                    </div>
+                </div>
+                <div class="inline-block px-4 py-2 rounded-full bg-white bg-opacity-20 text-sm font-medium">Partially supported</div>
+            </div>
+            <div class="bg-white border-2 border-gray-200 rounded-lg p-4">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-semibold text-gray-700">Confidence Level</span>
+                    <span class="text-xl font-bold text-gray-800">65%</span>
+                </div>
+                <div class="relative">
+                    <div class="w-full bg-gray-200 rounded-full h-4 shadow-inner">
+                        <div class="confidence-moderate h-4 rounded-full transition-all duration-1000 relative overflow-hidden" style="width: 65%">
+                            <div class="absolute inset-0 bg-gradient-to-r from-transparent to-white opacity-30 animate-pulse"></div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between text-xs text-gray-500 mt-1">
+                        <span>Low</span>
+                        <span>Medium</span>
+                        <span>High</span>
+                    </div>
+                </div>
+                <div class="text-xs text-gray-600 mt-2 text-center">Moderate confidence - Consider additional sources</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

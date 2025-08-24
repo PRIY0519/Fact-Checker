@@ -1,6 +1,6 @@
 # Holy Books Facts Checker Environment Variables
 # Get your OpenAI API key from: https://platform.openai.com/api-keys
-OPENAI_API_KEY=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
+OPENAI_API_KEY=
 
 # Flask Configuration
 FLASK_ENV=development
